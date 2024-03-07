@@ -1,0 +1,367 @@
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+
+
+/* BODY
+=============================================================================*/
+
+body, table {
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+}
+
+
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+    margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+    font-size: inherit;
+}
+
+h1, .toc-title {
+    font-size: 28px;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    color: #777;
+    font-size: 14px;
+}
+
+body > h2:first-child, body > h1:first-child, body > h1:first-child + h2, body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin-top: 10px;
+}
+
+/**/
+
+documentcover, .cover {
+    background: #fff;
+}
+
+chaptercover, .chapter_title {
+    background: #fff;
+}
+
+documentcover p, .cover p {
+    font-size: 50px;
+}
+
+chaptercover p, .chapter_title p {
+    font-size: 25px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+    color: #4183C4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+a.pwd-footnote:after {
+    color: #4183C4;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+    padding-left: 30px;
+}
+
+ul li > :first-child,
+ol li > :first-child,
+ul li ul:first-of-type,
+ol li ol:first-of-type,
+ul li ol:first-of-type,
+ol li ul:first-of-type {
+    margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+    margin-bottom: 0;
+}
+
+dl {
+    padding: 0;
+}
+
+dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+    padding: 0;
+}
+
+dl dt > :first-child {
+    margin-top: 0px;
+}
+
+dl dt > :last-child {
+    margin-bottom: 0px;
+}
+
+dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px;
+}
+
+dl dd > :first-child {
+    margin-top: 0px;
+}
+
+dl dd > :last-child {
+    margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+    font-size: 14px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+:not(pre) > code {
+    background-color: #f6f8fa !important;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+:not(pre) > code[class*=language-], pre[class*=language-] {
+    background-color: #f6f8fa !important;
+    border: 0 !important;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+code[class*="language-"] {
+    background: transparent !important;
+}
+
+/* QUOTES
+=============================================================================*/
+
+.graphArea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+a.see-ref-link {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a.see-ref-link:before {
+    display: inline-block;
+    width: 18px;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'%3E%3Cpath fill='%234183C4' d='M646-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h446L532-634q-12-12-11.5-28t11.5-28q12-12 28.5-12.5T589-691l183 183q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L589-269q-12 12-28.5 11.5T532-270q-11-12-11.5-28t11.5-28l114-114Z'/%3E%3C/svg%3E");
+    margin-right: 8px;
+}
+
+/* QUOTES
+=============================================================================*/
+blockquote {
+    border-left: 4px solid #DDD;
+    padding: 0 15px;
+    color: #777;
+}
+
+blockquote > :first-child {
+    margin-top: 0px;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+    clear: both;
+    margin: 15px 0;
+    height: 0px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    border-bottom: 4px solid #ddd;
+    padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 6px 13px;
+}
+
+table tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+    max-width: 100%
+}
+
+/* CUSTOM BLOCKS
+=============================================================================*/
+
+.http-head {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #808080;
+}
+
+.http-delete {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #A41E22;
+}
+
+.http-put {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #C5862B;
+}
+
+.http-post {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #10A54A;
+}
+
+.http-get {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #0F6AB4;
+}
+
+/** SPECIAL BLOCKS **/
+
+.pwd-block.block-info {
+    padding: 10px;
+    border-radius: 6px;
+    background: #d7eaf8;
+}
+
+.pwd-block.block-warning {
+    padding: 10px;
+    border-radius: 6px;
+    background: #fff4ce;
+}
+
+.pwd-block.block-note {
+    padding: 10px;
+    border-radius: 6px;
+    background: #f2f2f2;
+}
+
+.pwd-block.block-alert {
+    padding: 10px;
+    border-radius: 6px;
+    background: #f8d7da;
+}
+
+.pwd-block.block-stop {
+    padding: 10px;
+    color: #7F0000;
+}

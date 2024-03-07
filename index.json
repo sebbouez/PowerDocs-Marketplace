@@ -1,0 +1,34 @@
+{
+  "extensions": [
+    {
+      "author": "PowerDocs",
+      "category": "dico",
+      "name": "dico-fr",
+      "displayName": "French (general) dictionary",
+      "description": "Contains data for spell checking and synonyms thesaurus for French documents.",
+      "versions": [
+        "1.0"
+      ]
+    },
+    {
+      "author": "PowerDocs",
+      "category": "dico",
+      "name": "dico-en",
+      "displayName": "English (general) dictionary",
+      "description": "Contains data for spell checking and synonyms thesaurus for English documents.",
+      "versions": [
+        "1.0"
+      ]
+    },
+    {
+      "author": "PowerDocs",
+      "category": "renderer",
+      "name": "swagger-methods",
+      "displayName": "Swagger method custom block renderer",
+      "description": "Custom markdown renderer for http methods using Swagger style.",
+      "versions": [
+        "1.0"
+      ]
+    }
+  ]
+}

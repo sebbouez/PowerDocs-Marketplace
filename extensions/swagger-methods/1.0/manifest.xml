@@ -1,0 +1,14 @@
+<PowerDocsExtension>
+
+  <Metadata>
+    <Author>SBZ</Author>
+    <Description>This extension adds a MD block parser to render HTTP methods like a swagger.</Description>
+    <Url></Url>
+  </Metadata>
+
+ <Files>
+        <File name="main.js"/>
+        <File name="swagger-styles.css"/>
+    </Files>
+
+</PowerDocsExtension>
